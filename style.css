@@ -1,0 +1,55 @@
+
+html{
+	font-family: Calibri, sans-serif ;
+	max-width: 800px;
+	margin: auto;
+}
+
+h1 {
+	color: black;
+	text-align:center;
+}
+
+header {
+	position: sticky;
+	top:0;
+	padding : 20px;
+	background-color:white;
+	border-bottom-style: solid; 
+}
+
+h2 {
+	margin : 10px 0px;
+}
+
+h3 {
+	margin : 10px;
+	font-style : italic;
+	font-weight : lighter;
+}
+
+article {
+	padding : 10px 0px;
+	border-bottom-style : solid;
+}	
+
+figure {
+	margin:4px;
+	float:right;
+}
+
+button {
+	background-color : white;
+	border:2px solid black;
+	padding:8px;
+	margin:8px;
+	cursor: pointer;
+	text-decoration:none;
+	border-radius:8px;
+}	
+
+button:hover {
+	background-color : black;
+	color:white;
+	border-color:2px solid white;
+}
