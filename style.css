@@ -8,6 +8,7 @@ html{
 h1 {
 	color: black;
 	text-align:center;
+	font-size : 3em;
 }
 
 header {
@@ -35,8 +36,13 @@ article {
 }	
 
 article figure {
-	margin:4px;
+	margin:10px;
 	float:right;
+}
+
+article figure figcaption{
+	text-align : right;
+	font-family : Arial, Helvetica, sans-serif;
 }
 
 button {
