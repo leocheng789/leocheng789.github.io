@@ -16,18 +16,26 @@
 		</header>
 		
 		<article><h2>Reinforcement learning: From Atari games to Operations Research</h2>
-		<h3>Course project : Second-year annual project, Tutor Pierre-Cyril AUBIN, February&nbsp;-&nbsp;May&nbsp;2026</h3>
-		Using <a href="https://arxiv.org/abs/1312.5602"><i>Playing Atari with Deep Reinforcement Learning</i></a> 
-		and <a href="https://arxiv.org/pdf/2505.19053"><i>Structured Reinforcement Learning for Combinatorial Decision-Making</i></a>, 
-		this project will consist in understanding, reproducing and innovating.</article>
+		<h3>Course project : Second-year annual project,
+		<wbr>Tutor Pierre-Cyril AUBIN,
+		<wbr>February&nbsp;-&nbsp;May&nbsp;2026
+		</h3>
+		This project is based on <a href="https://arxiv.org/abs/1312.5602"><i>Playing Atari with Deep Reinforcement Learning</i></a> 
+		and <a href="https://arxiv.org/pdf/2505.19053"><i>Structured Reinforcement Learning for Combinatorial Decision-Making</i></a>.
+		The objective will be to understand, reproduce and optimise the Reinforcement Learning schemes described in both articles.</article>
 		
 		<article><figure><img src="./images/fast_marching.png" alt="Distance map" style="width:333px;height:200px;">
 		<figcaption>User interface showing a distance map</figcaption></figure>
 		<h2>Fast Marching</h2>
-		<h3>Course project : Software design and development, Prof. Julien CARDINAL, Xavier CLERC, September&nbsp;2025&nbsp;-&nbsp;January&nbsp;2026</h3>
+		<h3>Course project : Software design and development
+		<br>Prof. Julien CARDINAL, Xavier CLERC
+		<br>September&nbsp;2025&nbsp;-&nbsp;January&nbsp;2026</h3>
 		<a href="./files/fast_marching/slides.pdf"><button>Slides</button></a>
-		<br>The project's objective is to implement an user-friendly software for Fast Marching 
-		and its practical applications, such as edge detection and image segmentation. </article>
+		<br>Fast marching is derived from Dijkstra's algorithm. It intends to find the minimal path, while simultaneously distinguishing the paths on an image. 
+		The objective of the project is to implement an user-friendly software for Fast Marching 
+		and its practical applications, such as edge detection and image segmentation, in Python. 
+		A difficult task was implementing a progress bar to inform the user of the computation progression, 
+		which required parallel computation and information transmission between different parts of the programme.</article>
 
 		<article><figure>
 		<img src="./images/monalisa1.png" alt="Original image" style="width:205px;height:230px;">
@@ -35,9 +43,17 @@
 		<img src="./images/monalisa3.png" alt="retargeted Seam Carving" style="width:115px;height:230px;">
 		<figcaption>Mona Lisa, Botero</figcaption></figure>
 		<h2>Seam Carving for Image processing</h2>
-		<h3>Course project : First-year annual project, Tutor Pascal MONASSE, January&nbsp;-&nbsp;June&nbsp;2025</h3>
+		<h3>Course project : First-year annual project
+		<br>Tutor Pascal MONASSE
+		<br>January&nbsp;-&nbsp;June&nbsp;2025</h3>
 		<a href="./files/seam_carving/report.pdf"><button>Report</button></a><a href="./files/seam_carving/slides.pdf"><button>Slides</button></a>
-		<br>Seam Carving intends to resize images, without deforming or cropping important elements. This project explores the applications of Seam carving, such as content enhancement and object removal. Based on <a href="https://dl.acm.org/doi/10.1145/1275808.1276390">S.Avidan and A. 
+		<br>Seam Carving is an advanced image resizing method, without deforming or cropping important elements. It removes continuous seams with low energy. 
+		The energy of a part of the image can be defined as the quantity of contrast or entropy.
+		Different data structures have been implemented and tested in C++. In particular, a data structure inspired by Knuth's Dancing Links demonstrated 
+		significant improvement in time complexity, although space complexity had been higher.
+		This project also explores the applications of Seam carving, such as content enhancement and object removal. These applications are derived from the 
+		modification of the energy of the image or the successive application of Seam removal.
+		<br>Based on <a href="https://dl.acm.org/doi/10.1145/1275808.1276390">S.Avidan and A. 
 		Shamir, Seam Carving for Content-Aware Image Resizing,ACM Transactions on Graphics
 		(TOG),vol.26,no.3,2007.</a></article>
 
@@ -46,23 +62,32 @@
 		<img src="./images/poisson2.png" alt="Object insertion" style="width:211px;height:134px;">
 		<figcaption>Original image and inserted object</figcaption></figure>
 		<h2>Poisson Editor</h2>
-		<h3>Course project : Programming Workshop, Prof. Pascal MONASSE, February&nbsp;-&nbsp;June&nbsp;2025</h3>
+		<h3>Course project : Programming Workshop
+		<br>Prof. Pascal MONASSE
+		<br>February&nbsp;-&nbsp;June&nbsp;2025</h3>
 		<a href="./files/poisson_editor/slides.pdf"><button>Slides</button></a>
-		<br>The Poisson Editor aims to reconstruct a part of an image, based solely on the gradient in this part, by solving differential equations. 
-		Various linear equations for solving algorithms, such as the Fast Fourier transform and
-		the Gauss-Seidel method have been tested. Various practical applications, like changing the texture, illumination or colour 
-		of a part of an image have been developped. Based on <a href="https://dl.acm.org/doi/10.1145/882262.882269"> P.Pérez, M.Gangnet, A.Blake,
+		<br>The Poisson Editor aims to reconstruct a part of an image, based exclusively on the gradient in this part, by solving differential equations. 
+		In order to solve linear equations, the Fast Fourier Transform and the Gauss&mdash;Seidel methods have been implemented and compared in C++. 
+		The computing time has been highly optimised by using sparse matrices. In addition, various practical applications, 
+		like changing the texture, illumination or colour of a part of an image have been developed. 
+		<br>Based on <a href="https://dl.acm.org/doi/10.1145/882262.882269"> P.Pérez, M.Gangnet, A.Blake,
 		Poisson image editing,ACM Transactions on Graphics (TOG), vol. 22, no. 3,
 		2003</a></article>
 
 		<article><figure>
-		<img src="./images/voronoi.png" alt="a voronoi diagram" style="float:right;width:250px;height:250px;">
+		<img src="./images/voronoi.png" alt="A Voronoi diagram" style="float:right;width:250px;height:250px;">
 		<figcaption>A Voronoi diagram</figcaption></figure>
 		<h2>Voronoi diagram</h2>
-		<h3>TIPE (supervised personal initiative project), June&nbsp;2023&nbsp;-&nbsp;May&nbsp;2024</h3>
+		<h3>TIPE (supervised personal initiative project)
+		<br>June&nbsp;2023&nbsp;-&nbsp;May&nbsp;2024</h3>
 		<a href="./files/voronoi/report.pdf"><button>Report</button></a><a href="./files/voronoi/presentation.pdf"><button>Slides</button></a>
-		<br>Various algorithms for creating Voronoi diagrams have been implemented. The time and space complexities
-		of each algorithms have been analysed. Various heuristics in Voronoi game have been developped</article>
+		<br>Green-Sibson and Fortune algorithms for creating Voronoi diagrams have been implemented in OCaml. The time and space complexities
+		of each algorithm have been analysed and benchmarked. Indeed, Fortune algorithm, a sweepline algorithm, is the most efficient algorithm for 
+		computing a Voronoi diagram. Conversely, the Green-Sibson algorithm benefits from its incremental aspect, especially if the diagram is constructed piece-wise.
+		I have developed various heuristics and strategies in Voronoi games.</article>
 	
+		<footer>Last update : 01/02/2026
+		<br> &copy All rights reserved
+		</footer>
    </body>
  </html>

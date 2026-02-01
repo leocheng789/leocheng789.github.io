@@ -34,7 +34,7 @@ article {
 	overflow : hidden;
 }	
 
-figure {
+article figure {
 	margin:4px;
 	float:right;
 }
@@ -47,10 +47,15 @@ button {
 	cursor: pointer;
 	text-decoration:none;
 	border-radius:8px;
+	transition-duration : 0.5s;
 }	
 
 button:hover {
 	background-color : black;
 	color:white;
 	border-color:2px solid white;
+}
+
+footer {
+	text-align : center;
 }
