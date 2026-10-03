@@ -19,6 +19,10 @@ header {
 	border-bottom-style: solid; 
 }
 
+address {
+	font-style: normal;
+}
+
 h2 {
 	margin : 10px 0px;
 }
@@ -36,11 +40,26 @@ article {
 }	
 
 article figure {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto;
+	justify-items: end;
+	align-items: start;
 	margin:10px;
 	float:right;
 }
 
+article img {
+	padding : 5 px;
+	float:right;
+}
+
 article figure figcaption{
+	grid-row: 2;
+  	grid-column: 1 / -1;
+	inline-size: 100%;
+	contain: inline-size;
+  	min-inline-size: 0;
 	text-align : right;
 	font-family : Arial, Helvetica, sans-serif;
 }

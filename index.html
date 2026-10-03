@@ -1,4 +1,4 @@
-<!Doctype HTML>
+<!DOCTYPE HTML>
 <html>
   <head>
 	<meta charset="utf-8">
@@ -9,33 +9,52 @@
   <body> 
 		<header>
 		<h1>CHENG Léo <a href="https://ecoledesponts.fr/en"><img src="./images/enpc.png" style="float:right;width:105px;height:133px;"></a></h1>
-		<a href="mailto:leo.cheng@enpc.fr">leo.cheng@enpc.fr</a><br>
+		<address><a href="mailto:leo.cheng@enpc.fr">leo.cheng@enpc.fr</a><br>
 		<a href="https://github.com/leocheng789"><img src="./images/github.png" alt="[github icon]" style="width:13px;height:13px;">/leocheng789</a><br>
 		<a href="https://gitlab.com/leo-cheng"><img src="./images/gitlab.png" alt="[gitlab icon]" style="width:13px;height:13px;">/leo-cheng</a><br>
 		</address>
 		</header>
 		
-		<article><h2>Reinforcement learning: From Atari games to Operations Research</h2>
-		<h3>Course project : Second-year annual project,
-		<wbr>Tutor Pierre-Cyril AUBIN,
-		<wbr>February&nbsp;-&nbsp;May&nbsp;2026
+		<article><h2>A Fast Backup Solution for Postal Tour Planning with Mobile App Compatibility</h2>
+		<h3>Internship : University of Fribourg – DS&OR Group, in collaboration with Swiss Post,
+		<br>Supervisors Nour Elhouda TELLACHE, Bernard RIES, Roberto BALDACCI
+		<br>July&nbsp;-&nbsp;December&nbsp;2026
 		</h3>
-		<h4 style="color:red">Ongoing Project</h4>
-		This project is based on <a href="https://arxiv.org/abs/1312.5602"><i>Playing Atari with Deep Reinforcement Learning</i></a> 
-		and <a href="https://arxiv.org/pdf/2505.19053"><i>Structured Reinforcement Learning for Combinatorial Decision-Making</i></a>.
-		The objective will be to understand, reproduce and optimise the Reinforcement Learning schemes described in both articles.</article>
+		<h4 style="color:red">Ongoing project</h4>
+		This project explores the implementation of a fallback solution for Swiss Post's routing system. As a backup solution, the program should run on a mobile phone, 
+		offline and with a limited time and resources. The routing model includes various constraints (maximum weight, maximum volume, pick-up-delivery, break scheduling)
+		and a lexicographic objective cost that prioritises time-window violations over operational costs. This project includes work streams such as data processing 
+		and analysis, literature review and synthesis, complex modelling, algorithm implementation, constraint optimisation, result visualisation and solution communication.</article>
+
+		<article><figure><img src="./images/atari.gif" alt="Game display" style="width: 182px;height:240px;">
+		<figcaption>Game party observed and played by a trained model</figcaption></figure>
+		<h2>Reinforcement learning: From Atari Games to Operations Research</h2>
+		<h3>Course project : Second-year annual project,
+		<br>Supervisor Pierre-Cyril AUBIN,
+		<br>February&nbsp;-&nbsp;June&nbsp;2026
+		</h3>
+		<a href="./files/atari_ro/report.pdf"><button>Report</button></a>
+		<a href="./files/atari_ro/slides.pdf"><button>Slides</button></a>
+		<a href="./files/atari_ro/poster.pdf"><button>Poster</button></a>
+		<br><a href="https://arxiv.org/pdf/2505.19053"><i>Structured Reinforcement Learning for Combinatorial Decision-Making</i></a> introduced 
+		a new pipeline to solve industrial operational problems. This pipeline consists of a statistical model, which captures main features
+		of the environment, and an optimisation layer, which produces a feasible solution based on information gathered by the statistical model.
+		This architecture is trained with a reinforcement learning scheme and this project compares it with established 
+		reinforcement learning baselines, especially Deep Q-Network described by <a href="https://arxiv.org/abs/1312.5602"><i>Playing Atari with Deep Reinforcement 
+		Learning</i></a>. To achieve this, we implemented models following the paper's methodology and trained these models on Atari games, 
+		a classic Reinforcement Learning benchmark.</article>
 		
 		<article><figure><img src="./images/fast_marching.png" alt="Distance map" style="width:333px;height:200px;">
 		<figcaption>User interface showing a distance map</figcaption></figure>
 		<h2>Fast Marching</h2>
 		<h3>Course project : Software design and development
-		<br>Prof. Julien CARDINAL, Xavier CLERC
+		<br>Teachers Julien CARDINAL, Xavier CLERC
 		<br>September&nbsp;2025&nbsp;-&nbsp;January&nbsp;2026</h3>
 		<a href="./files/fast_marching/slides.pdf"><button>Slides</button></a>
-		<br>Fast marching is derived from Dijkstra's algorithm. It intends to find the minimal path, while simultaneously distinguishing the paths on an image. 
-		The objective of the project is to implement an user-friendly software for Fast Marching 
+		<br>Fast marching extends Dijkstra's algorithm to compute the shortest path, while simultaneously distinguishing the paths on an image. 
+		The objective of the project is to implement a user-friendly software for Fast Marching 
 		and its practical applications, such as edge detection and image segmentation, in Python. 
-		A difficult task was implementing a progress bar to inform the user of the computation progression, 
+		A key engineering challenge was implementing a status bar to inform the user of the computation progression, 
 		which required parallel computation and information transmission between different parts of the programme.</article>
 
 		<article><figure>
@@ -45,15 +64,15 @@
 		<figcaption>Mona Lisa, Botero</figcaption></figure>
 		<h2>Seam Carving for Image processing</h2>
 		<h3>Course project : First-year annual project
-		<br>Tutor Pascal MONASSE
+		<br>Supervisor Pascal MONASSE
 		<br>January&nbsp;-&nbsp;June&nbsp;2025</h3>
 		<a href="./files/seam_carving/report.pdf"><button>Report</button></a><a href="./files/seam_carving/slides.pdf"><button>Slides</button></a>
-		<br>Seam Carving is an advanced image resizing method, without deforming or cropping important elements. It removes continuous seams with low energy. 
-		The energy of a part of the image can be defined as the quantity of contrast or entropy.
-		Different data structures have been implemented and tested in C++. In particular, a data structure inspired by Knuth's Dancing Links demonstrated 
-		significant improvement in time complexity, although space complexity had been higher.
-		This project also explores the applications of Seam carving, such as content enhancement and object removal. These applications are derived from the 
-		modification of the energy of the image or the successive application of Seam removal.
+		<br>Seam Carving is a content-aware image resizing technique, without deforming or cropping salient features. It removes continuous seams with low energy. 
+		energy function quantifies local contrast and entropy.
+		We implemented and tested different data structures in C++. In particular, a data structure inspired by Knuth's Dancing Links demonstrated 
+		significant improvement in time complexity, at the cost of higher memory usage.
+		This project also explores the applications of Seam carving, such as content enhancement and object removal. These applications are derived from
+		 energy field manipulation or successive application of seam removal.
 		<br>Based on <a href="https://dl.acm.org/doi/10.1145/1275808.1276390">S.Avidan and A. 
 		Shamir, Seam Carving for Content-Aware Image Resizing,ACM Transactions on Graphics
 		(TOG),vol.26,no.3,2007.</a></article>
@@ -64,13 +83,13 @@
 		<figcaption>Original image and inserted object</figcaption></figure>
 		<h2>Poisson Editor</h2>
 		<h3>Course project : Programming Workshop
-		<br>Prof. Pascal MONASSE
+		<br>Teacher Pascal MONASSE
 		<br>February&nbsp;-&nbsp;June&nbsp;2025</h3>
 		<a href="./files/poisson_editor/slides.pdf"><button>Slides</button></a>
-		<br>The Poisson Editor aims to reconstruct a part of an image, based exclusively on the gradient in this part, by solving differential equations. 
-		In order to solve linear equations, the Fast Fourier Transform and the Gauss&mdash;Seidel methods have been implemented and compared in C++. 
-		The computing time has been highly optimised by using sparse matrices. In addition, various practical applications, 
-		like changing the texture, illumination or colour of a part of an image have been developed. 
+		<br>The Poisson Editor aims to reconstruct image regions, based exclusively on the gradient in this part, by solving partial differential equations. 
+		In order to solve the resulting linear systems, the Fast Fourier Transform and the Gauss-Seidel methods have been implemented and compared in C++. 
+		Sparse matrix representations significantly reduced computation time. In addition, various practical applications, 
+		like texture transfer, illumination adjustment and color blending have been developed. 
 		<br>Based on <a href="https://dl.acm.org/doi/10.1145/882262.882269"> P.Pérez, M.Gangnet, A.Blake,
 		Poisson image editing,ACM Transactions on Graphics (TOG), vol. 22, no. 3,
 		2003</a></article>
@@ -82,12 +101,12 @@
 		<h3>TIPE (supervised personal initiative project)
 		<br>June&nbsp;2023&nbsp;-&nbsp;May&nbsp;2024</h3>
 		<a href="./files/voronoi/report.pdf"><button>Report</button></a><a href="./files/voronoi/presentation.pdf"><button>Slides</button></a>
-		<br>Green-Sibson and Fortune algorithms for creating Voronoi diagrams have been implemented in OCaml. The time and space complexities
-		of each algorithm have been analysed and benchmarked. Indeed, Fortune algorithm, a sweepline algorithm, is the most efficient algorithm for 
-		computing a Voronoi diagram. Conversely, the Green-Sibson algorithm benefits from its incremental aspect, especially if the diagram is constructed piece-wise.
-		I have developed various heuristics and strategies in Voronoi games.</article>
+		<br>I implemented Green-Sibson and Fortune algorithms for creating Voronoi diagrams in OCaml. The time and space complexities
+		of each algorithm have been analysed and benchmarked. Fortune's sweepline algorithm is the most efficient algorithm for 
+		computing a Voronoi diagram. The Green-Sibson's algorithm benefits from its incremental aspect, especially if the diagram is constructed piece-wise.
+		I have developed various heuristics and game-playing strategies in Voronoi games.</article>
 	
-		<footer>Last update : 04/02/2026
+		<footer>Last update : 03/10/2026
 		<br> &copy All rights reserved
 		</footer>
    </body>
